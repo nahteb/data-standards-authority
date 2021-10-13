@@ -99,6 +99,16 @@ end
 
 helpers UrlHelpers
 
+helpers do
+  def handle_organisation(id)
+    if !data.organisations[id].nil?
+      link_to data.organisations[id].name, data.organisations[id].url
+    else
+      id
+    end
+  end
+end
+
 # catalogue_csv = File.expand_path("data/catalogue.csv", __dir__)
 # organisation_csv = File.expand_path("data/organisation.csv", __dir__)
 # api_catalogue = ApiCatalogue.from_csv(catalogue_csv: catalogue_csv, organisation_csv: organisation_csv)

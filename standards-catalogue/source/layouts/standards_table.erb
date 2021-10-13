@@ -7,7 +7,9 @@
         <tr>
           <td nowrap><%= key %>: </td>
           <% if key == 'link' %>
-            <td nowrap><strong><a href='<%= value %>'><%= value %></a></strong> </td>
+            <td nowrap><strong><%= link_to value, value %></strong> </td>
+          <% elsif key == 'organisation' %>
+            <td nowrap><strong><%= handle_organisation(value) %></strong> </td>
           <% else %>
             <td nowrap><strong><%= value %></strong> </td>
           <% end %>
