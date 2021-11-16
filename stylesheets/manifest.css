@@ -3162,6 +3162,15 @@ html.has-search-results-open {
 .navbar li {
   margin: 2px 15px 2px 0; }
 
+.status-active {
+  background-color: #8D5; }
+
+.status-draft {
+  background-color: #ffdd00; }
+
+.list-of-tags {
+  padding-left: 20px; }
+
 .fixedsticky {
   position: -moz-sticky;
   position: -ms-sticky;
